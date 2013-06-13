@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!--
+  <remote name="github" fetch="git://github.com/"
+      review="review.cyanogenmod.com" />
+  <remote name="github" fetch="http://github.com/"
+      review="review.cyanogenmod.com" />
+-->
+  <remote name="cmod" fetch="git://github.com/CyanogenMod/"
+      review="review.cyanogenmod.com" />
+
+<!--
+  <remote name="aosp" fetch="https://android.googlesource.com/"
+	review="https://android-review.googlesource.com/" />
+
+  <remote name="korg" fetch="git://android.git.kernel.org/"
+	review="review.source.android.com" />
+-->
+
+  <remote name="omap-mirror" fetch="git://git.omapzoom.org/"
+      review="review.omapzoom.org" />
+  <remote name="omapzoom" fetch="git://git.omapzoom.org/"
+      alias="omap-mirror" review="review.omapzoom.org" />
+
+  <remote name="linaro-other" fetch="git://git.linaro.org/" />
+  <remote name="linaro"  fetch="git://android.git.linaro.org/"
+      review="review.android.git.linaro.org" />
+
+  <remote name="yath"	 fetch="git://github.com/yath/" />
+  <remote name="zyga"	 fetch="git://github.com/zyga/" />
+  <remote name="rperier" fetch="git://github.com/rperier/" />
+  <remote name="jackpal" fetch="git://github.com/jackpal" />
+  <remote name="tmobile" fetch="git://github.com/tmobile" />
+  <remote name="themes"  fetch="git://github.com/tmobile" alias="tmobile" />
+  <remote name="abstra"  fetch="git://github.com/abstrakraft/" />
+  <remote name="chainsdd" fetch="git://github.com/ChainsDD" />
+
+  <remote name="0xbench" fetch="git://gitorious.org/0xbench/" />
+  <remote name="0xdroid" fetch="git://gitorious.org/0xdroid/" />
+
+  <remote name="u-boot"  fetch="git://git.denx.de/" />
+  <remote name="busybox" fetch="git://busybox.net/" />
+  <remote name="collab"  fetch="git://git.debian.org/collab-maint/" />
+
+  <remote name="aufs"
+      fetch="git://aufs.git.sourceforge.net/gitroot/aufs/" />
+  <remote name="ntfs-3g"
+      fetch="git://ntfs-3g.git.sourceforge.net/gitroot/ntfs-3g/" />
+
+<!--
+  <remote name="x86" fetch="git://git.android-x86.org/" />
+  <remote name="x86" fetch="http://git.android-x86.org/" />
+-->
+  <remote name="x86"
+	fetch="git://android-x86.git.sf.net/gitroot/android-x86/x86" />
+
+  <remote name="aokp" fetch="git://github.com/" review="gerrit.aokp.co" />
+
+  <remote name="amlogic"   fetch="ssh://git@openlinux.amlogic.com/" />
+  <remote name="openlinux" fetch="ssh://git@openlinux.amlogic.com/" />
+
+  <remote name="hhgit" fetch="ssh://gitosis@10.12.0.1/hhdroid/" />
+  <remote name="hhgl" fetch="gitlab@10.12.3.160:hhdroid/" />
+
+  <!-- remove useless projects  -->
+
+  <remove-project name="CyanogenMod/android_bootable_diskinstaller" />
+  <remove-project name="CyanogenMod/android_device_generic_armv7-a" />
+
+<!--
+  <remove-project name="CyanogenMod/android_hardware_ti_omap3" />
+  <remove-project name="CyanogenMod/android_hardware_msm7k" />
+
+  <remove-project name="CyanogenMod/android_hardware_qcom_audio" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_bt" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_camera" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_keymaster" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_media" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_power" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_wlan" />
+-->
+
+  <remove-project name="CyanogenMod/android_hardware_qcom_msm8960" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_sensors" />
+
+  <remove-project name="CyanogenMod/android_external_quake" />
+  <remove-project name="CyanogenMod/android_external_replicaisland" />
+  <remove-project name="CyanogenMod/android_external_wpa_supplicant_6" />
+  <remove-project name="CyanogenMod/android_external_qemu-pc-bios" />
+  <remove-project name="CyanogenMod/android_external_grub" />
+
+<!--
+  <remove-project name="CyanogenMod/android_external_valgrind" />
+
+  <remove-project name="CyanogenMod/android_external_checkpolicy" />
+  <remove-project name="CyanogenMod/android_external_libselinux" />
+  <remove-project name="CyanogenMod/android_external_sepolicy" />
+  <remove-project name="CyanogenMod/android_external_libsepol" />
+
+  <remove-project name="CyanogenMod/android_packages_apps_Provision" />
+  <remove-project name="CyanogenMod/android_packages_apps_QuickSearchBox" />
+-->
+
+  <remove-project name="CyanogenMod/android_packages_apps_Protips" />
+  <remove-project name="CyanogenMod/android_packages_apps_SpareParts" />
+  <remove-project name="CyanogenMod/android_packages_apps_VideoEditor" />
+  <remove-project name="CyanogenMod/android_packages_apps_Launcher2" />
+  <remove-project name="CyanogenMod/android_packages_apps_Music" />
+
+  <remove-project name="CyanogenMod/android_packages_apps_Gallery" />
+  <remove-project name="CyanogenMod/android_packages_apps_MusicFX" />
+  <remove-project name="CyanogenMod/android_packages_apps_SpeechRecorder" />
+  <remove-project name="CyanogenMod/android_packages_apps_SmartCardService" />
+
+  <remove-project name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
+  <remove-project name="CyanogenMod/android_packages_inputmethods_PinyinIME" />
+
+  <remove-project name="CyanogenMod/android_frameworks_mff" />
+
+  <remove-project name="CyanogenMod/android_external_eclipse-basebuilder" />
+  <remove-project name="CyanogenMod/android_external_eclipse-windowbuilder" />
+
+  <remove-project name="platform/prebuilts/eclipse" />
+
+  <!--remove-project name="platform/cts" /-->
+  <remove-project name="platform/docs/source.android.com" />
+
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" />
+
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" />
+
+  <remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
+  <remove-project name="platform/prebuilts/clang/darwin-x86/3.2" />
+  <remove-project name="platform/prebuilts/clang/linux-x86/3.1" />
+
+  <remove-project name="platform/tools/motodev" />
+  <remove-project name="platform/tools/build" />
+
+  <!-- CyanogenMod -->
+
+  <remove-project name="CyanogenMod/android" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" />
+
+  <remove-project name="CyanogenMod/android_external_libncurses" />
+  <remove-project name="CyanogenMod/android_external_qrngd" />
+  <remove-project name="CyanogenMod/android_external_rsync" />
+  <remove-project name="CyanogenMod/android_external_bash" />
+  <remove-project name="CyanogenMod/android_external_nano" />
+  <remove-project name="CyanogenMod/android_external_vim" />
+
+  <remove-project name="CyanogenMod/android_prebuilt" />
+
+<!--
+  <remove-project name="CyanogenMod/android_vendor_qcom_opensource_v8" />
+
+  <remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
+
+  <remove-project name="CyanogenMod/android_external_lsof" />
+  <remove-project name="CyanogenMod/android_external_htop" />
+  <remove-project name="CyanogenMod/android_external_powertop" />
+
+
+  <project path="external/clearsilver" name="android_external_clearsilver"
+      remote="cmod" revision="refs/heads/jellybean" />
+  <project path="external/bootmenu" name="android_external_bootmenu"
+      remote="cmod" revision="refs/heads/jellybean" />
+
+  <project path="external/wireless-tools"
+      name="CyanogenMod/android_external_wireless-tools"
+      remote="cmod" revision="refs/heads/jellybean" />
+
+  <project path="packages/apps/GanOptimizer"
+      name="android_packages_apps_GanOptimizer"
+      remote="cmod" revision="refs/heads/jellybean" />
+  <project path="packages/apps/Usb" name="android_packages_apps_Usb"
+      remote="cmod" revision="refs/heads/jellybean" />
+
+  <remove-project name="CyanogenMod/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.6" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6"
+      name="android_prebuilts_gcc_linux-x86-32_arm_arm-linux-androideabi-4.6"
+      remote="yath" revision="refs/heads/jellybean" />
+
+  <project name="CyanogenMod/lge-kernel-mako" path="kernel/common" />
+-->
+
+  <project name="CyanogenMod/android_device_lge_mako"
+      path="device/lge/mako" groups="device" />
+
+  <!-- extra projects -->
+
+<!--
+  <project path="bootable/bootloader/u-boot" name="u-boot"
+      remote="u-boot" revision="refs/heads/master" />
+
+  <project path="external/busybox" name="busybox"
+      remote="busybox" revision="refs/heads/master" />
+
+  <project path="external/android_input_bridge" name="android_input_bridge"
+      remote="rperier" revision="refs/heads/master" />
+
+  <project path="external/lava-blackbox" name="lava-blackbox"
+      remote="zyga" revision="refs/heads/master" />
+-->
+
+  <project path="external/usb/usb-modeswitch" name="usb-modeswitch"
+      remote="collab" revision="refs/heads/master" />
+  <project path="external/usb/usb-modeswitch-data" name="usb-modeswitch-data"
+      remote="collab" revision="refs/heads/master" />
+
+  <project path="external/aufs" name="aufs3-standalone"
+      remote="aufs" revision="refs/heads/aufs3.0" />
+  <remove-project name="CyanogenMod/android_external_ntfs-3g" />
+  <project path="external/ntfs-3g" name="ntfs-3g"
+      remote="ntfs-3g" revision="refs/heads/edge" />
+
+<!-- XXX:
+  <project path="external/exfat" name="platform/external/exfat"
+      remote="hhgit" revision="refs/heads/master" />
+  <project path="external/usb/libusb" name="platform/external/usb/libusb"
+      remote="hhgit" revision="refs/heads/legacy" />
+  <project path="packages/apps/PowerManager"
+      name="platform/packages/apps/PowerManager"
+      remote="hhgit" revision="refs/heads/master" />
+
+  <project path="hardware/ti/gps" name="platform/hardware/ti/gps"
+      remote="hhgit" revision="refs/heads/master" />
+  <project path="external/mcp/NaviLink" name="platform/external/mcp/NaviLink"
+      remote="hhgit" revision="refs/heads/master" />
+  <project path="external/mcp/MCP_Common"
+      name="platform/external/mcp/MCP_Common"
+      remote="hhgit" revision="refs/heads/master" />
+
+  <project path="external/cwiid" name="platform/external/cwiid"
+      remote="hhgit" revision="refs/heads/omap-jb" />
+  <project path="packages/apps/TSCalibration"
+      name="platform/"external/cwiidckages/apps/TSCalibration
+      remote="hhgit" revision="refs/heads/omap-jb" />
+-->
+
+<!--
+  <project path="external/memsic" name="platform/external/memsic"
+      remote="openlinux" revision="refs/heads/gingerbread-amlogic" />
+
+  <project path="packages/apps/Superuser" name="Superuser"
+      remote="chainsdd" revision="refs/heads/master" />
+  <project path="system/su" name="su-binary"
+      remote="chainsdd" revision="refs/heads/gc" />
+-->
+
+  <project path="packages/apps/AndroidTerm" name="Android-Terminal-Emulator"
+      remote="jackpal" revision="refs/heads/master" />
+
+  <!-- 0xlab -->
+
+<!--
+  <project path="packages/apps/0xbench" name="0xbench"
+      remote="0xbench" revision="refs/heads/master" />
+
+  <project path="external/mtd-utils" name="external_mtd_utils"
+      remote="0xdroid" revision="refs/heads/master" />
+
+  <project path="external/tslib" name="external_tslib"
+      remote="0xdroid" revision="refs/heads/beagle-eclair" />
+-->
+
+  <!-- TI specific addons -->
+
+  <project path="kernel/common" name="kernel/omap"
+      remote="omap-mirror" revision="refs/heads/p-android-omap-3.4" />
+
+  <remove-project name="CyanogenMod/android_device_ti_panda" />
+  <project path="device/ti/panda" name="device/ti/panda"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <remove-project name="CyanogenMod/android_hardware_ti_omap4xxx" />
+  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <project path="hardware/ti/domx" name="platform/hardware/ti/domx"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="external/bltsville" name="platform/external/bltsville"
+      remote="omap-mirror" revision="refs/heads/master" />
+
+  <project path="hardware/ti/dvp" name="platform/hardware/ti/dvp"
+      remote="omap-mirror" revision="refs/heads/master" />
+  <project path="hardware/ti/arx" name="platform/hardware/ti/arx"
+      remote="omap-mirror" revision="refs/heads/master" />
+
+  <!-- OMAP3 related trees -->
+<!--
+  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="device/ti/zoom2" name="device/ti/zoom2"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <project path="hardware/ti/tiler" name="platform/hardware/ti/tiler"
+      remote="omap-mirror" revision="refs/heads/memmgr_1.0" />
+  <project path="hardware/ti/syslink" name="platform/hardware/ti/syslink"
+      remote="omap-mirror" revision="refs/heads/syslink-2.0-m1" />
+-->
+
+  <!-- OMAP4 related trees -->
+<!--
+  <project path="device/ti/support-tools" name="repo/support-tools"
+      remote="omap-mirror" revision="refs/heads/master" />
+
+  <project path="device/ti/blaze" name="device/ti/blaze"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+-->
+  <project path="device/ti/blaze_tablet" name="device/ti/blaze_tablet"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <project path="device/ti/common-open" name="device/ti/common-open"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" >
+    <!--copyfile src="README.kernel" dest="README.kernel" /-->
+  </project>
+  <project path="device/ti/proprietary-open" name="device/ti/proprietary-open"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <!-- OMAP5 related trees -->
+  <project path="device/ti/omap5sevm" name="device/ti/omap5sevm"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="device/ti/panda5" name="device/ti/panda5" groups="device"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" >
+      <annotation name="vendor" value="ti" />
+  </project>
+
+  <!-- Connectivity -->
+  <remove-project name="CyanogenMod/android_hardware_ti_wlan" />
+  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <remove-project name="CyanogenMod/android_hardware_ti_wpan" />
+  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <project path="external/crda" name="platform/external/crda"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="external/libnfc-ti" name="platform/external/libnfc-ti"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <remove-project name="CyanogenMod/android_external_wpa_supplicant_8_ti" />
+  <project path="external/wpa_supplicant_8_ti"
+      name="platform/external/wpa_supplicant_8_ti"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <!-- BlueTI trees -->
+<!--
+  <project path="external/bluetooth/blueti"
+      name="platform/external/bluetooth/blueti"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="external/bluetooth/readline"
+      name="platform/external/bluetooth/readline"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="external/bluetooth/termcap"
+      name="platform/external/bluetooth/termcap"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+-->
+
+  <!-- TI add on APPS -->
+
+  <project path="packages/apps/OMAPCamera"
+      name="platform/packages/apps/OMAPCamera"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+  <project path="packages/apps/MultiDisplay"
+      name="platform/packages/apps/MultiDisplay"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="packages/apps/WfdSinkService"
+      name="platform/packages/apps/WfdSinkService"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+  <project path="packages/apps/WfdSinkPlayer"
+      name="platform/packages/apps/WfdSinkPlayer"
+      remote="omap-mirror" revision="refs/heads/d-jb-mr1-release" />
+
+<!--
+  <project path="external/libexif"
+      name="platform/external/libexif"
+      remote="omap-mirror" revision="refs/heads/ics" />
+-->
+
+  <!-- AOKP -->
+
+<!--
+  <project path="packages/apps/ROMControl"
+      name="AOKP/packages_apps_ROMControl"
+      remote="aokp" revision="refs/heads/jb" />
+  <project path="packages/wallpapers/SwagPapers"
+      name="AOKP/packages_wallpapers_SwagPapers_v2"
+      remote="aokp" revision="refs/heads/jb" />
+
+  <project path="vendor/aokp" name="AOKP/vendor_aokp"
+      remote="aokp" revision="refs/heads/jb" />
+  <project path="vendor/aokp/bot" name="AOKP/pseudo_buildbot"
+      remote="aokp" revision="refs/heads/jb" />
+-->
+
+  <!-- Linaro -->
+
+  <project path="bootable/bootloader/u-boot" name="boot/u-boot-linaro-stable"
+      remote="linaro-other" revision="refs/heads/master" />
+
+<!--
+  <project path="device/linaro/pandaboard" name="device/linaro/pandaboard"
+      remote="linaro" revision="refs/heads/linaro-jb" />
+  <project path="device/ti/uim" name="device/ti/uim"
+      remote="linaro" revision="refs/heads/android" />
+
+  <project path="device/linaro/common" name="device/linaro/common"
+      remote="linaro" revision="refs/heads/linaro-jb" />
+  <project path="hardware/linaro/common" name="hardware/linaro/common"
+      remote="linaro" revision="refs/heads/linaro_android_jb" />
+  <project path="hardware/linaro/tinyhal"
+      name="platform/hardware/linaro/tinyhal"
+      revision="refs/heads/linaro-jellybean" />
+
+  <project path="kernel/common" name="kernel/panda" remote="linaro"
+      revision="refs/heads/linaro-tilt-android-tracking" />
+  <project path="kernel/common" name="people/andygreen/repo-branch-archive"
+      remote="linaro-other" revision="refs/heads/tilt-android-tracking" />
+  <project path="kernel/common" name="people/andygreen/repo-branch-archive"
+      remote="linaro-other" revision="refs/heads/tilt-android-3.1" >
+    <copyfile src="arch/arm/configs/panda_defconfig"
+	dest="kernel/arch/arm/configs/android_omap4_defconfig" />
+  </project>
+
+  <project path="external/busybox" name="platform/external/busybox"
+      remote="linaro" revision="refs/heads/linaro-1.21" />
+  <project path="external/lrzsz" name="platform/external/lrzsz"
+      remote="linaro" revision="refs/heads/linaro-master" />
+
+  <project path="external/x264" name="platform/external/x264"
+      remote="linaro" revision="refs/heads/linaro-master" />
+  <project path="external/ffmpeg" name="platform/external/ffmpeg"
+      remote="linaro" revision="refs/heads/linaro-0.11.1" />
+  <project path="external/speex" name="platform/external/speex"
+      remote="linaro" revision="refs/heads/linaro_mmwg" />
+
+  <project path="external/libpng" name="platform/external/libpng"
+      remote="linaro" revision="refs/heads/linaro_android_4.1.2" />
+  <project path="external/jpeg"
+      name="people/tomgall/libjpeg-turbo/libjpeg-turbo"
+      remote="linaro-other" revision="refs/heads/android" />
+  <project path="external/speex" name="platform/external/speex"
+      remote="linaro" revision="refs/heads/linaro_mmwg" />
+
+  <project path="external/android_input_bridge"
+      name="platform/external/android-input-bridge"
+      remote="linaro" revision="refs/heads/linaro-master" groups="common" />
+  <project path="external/lava-blackbox" name="lava-blackbox"
+      remote="zyga" revision="refs/heads/master" groups="common" />
+
+  <project path="external/thirdparty-benchmarks"
+      name="platform/external/thirdparty-benchmarks"
+      remote="linaro" revision="refs/heads/master" groups="common" />
+  <project path="external/linaro-android-tools"
+      name="platform/external/linaro-android-tools"
+      remote="linaro" revision="refs/heads/master" groups="common" />
+
+  <project path="packages/wallpapers/LinaroWallpaper"
+      name="platform/packages/wallpapers/LinaroWallpaper"
+      remote="linaro" revision="refs/heads/master" />
+  <project path="packages/apps/DisableSuspend"
+      name="platform/packages/apps/DisableSuspend"
+      remote="linaro" revision="refs/heads/master" />
+  <project path="packages/inputmethods/hackerskeyboard"
+      name="platform/packages/inputmethods/hackerskeyboard"
+      remote="linaro" revision="refs/heads/linaro-master" groups="devel" />
+
+  <project path="external/gator" name="arm/ds5/gator"
+      remote="linaro-other" revision="refs/heads/android" />
+
+  <project path="packages/apps/0xbench" name="platform/packages/apps/0xbench"
+      remote="linaro" revision="refs/heads/linaro-master" />
+  <project name="people/afrantzis/glmark2" path="packages/apps/glmark2"
+      remote="linaro-other" revision="refs/heads/master" />
+
+  <project path="external/pm-qa" name="tools/pm-qa"
+      remote="linaro-other" revision="refs/heads/master" />
+  <project path="external/tools_for_pm-qa"
+      name="people/kejunzhou/tools_for_pm-qa"
+      remote="linaro-other" revision="refs/heads/master" />
+  <project path="external/powertop" name="platform/external/powertop"
+      remote="linaro" revision="refs/heads/linaro" />
+  <project path="external/ncurses" name="platform/external/ncurses"
+      remote="linaro" revision="refs/heads/linaro" />
+  <project path="external/libnl" name="platform/external/libnl"
+      remote="linaro" revision="refs/heads/linaro" />
+  <project path="external/iozone" name="platform/external/iozone"
+      remote="linaro" revision="refs/heads/linaro_android" />
+  <project path="external/memtester" name="platform/external/memtester"
+      remote="linaro" revision="refs/heads/linaro_android" />
+  <project path="external/stress" name="platform/external/stress"
+      remote="linaro" revision="refs/heads/linaro_android" />
+  <project path="external/stressapptest" name="platform/external/stressapptest"
+      remote="linaro" revision="refs/heads/linaro_android" />
+  <project path="external/htop" name="platform/external/htop"
+      remote="linaro" revision="refs/heads/linaro_android" />
+  <project path="external/cyclictest" name="platform/external/cyclictest"
+      remote="linaro" revision="refs/heads/linaro_android"/>
+  <project path="external/sysbench" name="platform/external/sysbench"
+      remote="linaro" revision="refs/heads/linaro_android"/>
+  <project path="external/stringbench" name="platform/external/stringbench"
+      remote="linaro" revision="refs/heads/master" />
+-->
+
+  <!-- Android-x86 -->
+
+  <project path="external/eject" name="platform/external/eject"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+<!--
+  <project path="hardware/ril" name="platform/hardware/ril"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="external/ppp" name="platform/external/ppp"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+  <project path="hardware/gps" name="platform/hardware/gps"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="hardware/liblights" name="platform/hardware/liblights"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="hardware/libsensors" name="platform/hardware/libsensors"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+  <project path="hardware/libcamera" name="platform/hardware/libcamera"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+  <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="external/drm" name="platform/external/drm"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="external/mesa" name="platform/external/mesa"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="external/v86d" name="platform/external/v86d"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+  <project path="hardware/libaudio" name="platform/hardware/libaudio"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib"
+      remote="x86" revision="refs/heads/ics-x86" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+  <project path="external/mplayer" name="platform/external/mplayer"
+      remote="x86" revision="refs/heads/froyo-x86" />
+
+  <project path="external/tslib" name="platform/external/tslib"
+      remote="x86" revision="refs/heads/ics-x86" />
+
+  <project path="bootable/newinstaller" name="platform/bootable/newinstaller"
+      remote="x86" revision="refs/heads/ics-x86" />
+-->
+
+  <!-- AOSP -->
+
+<!--
+  <project path="kernel/common" name="kernel/omap"
+      remote="aosp" revision="refs/heads/android-omap-panda-3.4" />
+
+  <project path="dalvik" name="platform/dalvik2"
+      remote="aosp" revision="refs/heads/master" />
+  <project path="libcore" name="platform/libcore2"
+      remote="aosp" revision="refs/heads/master" />
+-->
+
+  <!-- T-Mobile Themes -->
+
+<!--
+  <project path="vendor/tmobile/apps/ThemeChooser"
+      name="themes-platform-vendor-tmobile-apps-ThemeChooser"
+      remote="themes" revision="refs/heads/master" />
+  <project path="vendor/tmobile/libs/com.tmobile.themes"
+      name="themes-platform-vendor-tmobile-libs-com.tmobile.themes"
+      remote="themes" revision="refs/heads/master" />
+  <project path="vendor/tmobile/providers/ThemeManager"
+      name="themes-platform-vendor-tmobile-providers-ThemeManager"
+      remote="themes" revision="refs/heads/master" />
+  <project path="vendor/tmobile/products/themes"
+      name="themes-platform-vendor-tmobile-products-themes"
+      remote="themes" revision="refs/heads/master" />
+
+  <project path="vendor/tmobile/themes/Androidian"
+      name="themes-platform-vendor-tmobile-themes-Androidian"
+      remote="themes" revision="refs/heads/master" />
+  <project path="vendor/tmobile/themes/Cyanbread"
+      name="themes-platform-vendor-tmobile-themes-Cyanbread"
+      remote="themes" revision="refs/heads/master" />
+-->
+
+</manifest>
